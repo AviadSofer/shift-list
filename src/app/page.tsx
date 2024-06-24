@@ -26,7 +26,7 @@ function Home() {
       className="flex min-h-screen items-center justify-center"
     >
       <div className="overflow-x-auto rounded-lg bg-white p-4 shadow-lg">
-        <div className="flex gap-2">
+        <div className="flex flex-col gap-2 md:flex-row">
           {Object.entries(guardsOptions).map(([key, value]) => (
             <div key={key} className="flex items-center gap-2">
               <label htmlFor={key}>{key}</label>

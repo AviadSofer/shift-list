@@ -94,7 +94,7 @@ export const generateSchedule = (options: GuardsOptions) => {
 
       let neededGuards = totalGuards || 1;
       while (neededGuards > 0) {
-        let guardName = " שומר";
+        let guardName = "";
         if ((dayTime >= 19 || dayTime < 7) && options.guardsCanGuardOnlyAtNight > 0) {
           guardName = `יכול לשמור רק בלילה ${options.guardsCanGuardOnlyAtNight}`;
           options.guardsCanGuardOnlyAtNight--;
